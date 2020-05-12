@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Nelli Nosova](https://up.htmlacademy.ru/htmlcss/28/user/1336029).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Зольников](https://github.com/AlekseyZolnikov).
 
 ---
 
