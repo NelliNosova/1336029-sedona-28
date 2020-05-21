@@ -92,30 +92,12 @@
       <p class="larger-text">Заинтересовались?</p>
       <p>Заинтересовались? Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
-      <button>Поиск гостиницы в седоне</button>
-      <img class="map" src="img/map.jpg" width="1199" height="594" alt="карта поиска">
-      <!-- Доработаю форму, каогда пройдем эту тему
-				<form action="#" method="post">
-					<label>
-						Дата заезда: <input type="date" name="start">
-						<img class="calendar" src="img/cslendar.svg" width="21" height="23" alt="календарь">
-					</label>
-					<label>
-						Дата выезда: <input type="date" name="end">
-						<img class="calendar" src="img/cslendar.svg" width="21" height="23" alt="календарь">
-					</label>
-					<label>
-						Взрослые: <input>
-					</label>
-					<label>
-						Дети: <input>
-					</label>
-					<button>Найти</button>
-				</form> -->
+      <button class="btn btn-brown" type="button">Поиск гостиницы в седоне</button>
+      <img class="map" src="img/map.jpg" width="1199" height="594" alt="карта поиска">      
     </section>
   </main>
   <footer class="main-footer">
-    <p class="contacts">#visitSEDONA</p>
+    <p class="contacts">#<span class="lowercase">visit</span>sedona</p>
     <p class="contacts-phone"> ТЕЛ: +7(495) 666-01-66</p>
     <ul class="social">
       <li class="social-item">
@@ -125,7 +107,7 @@
         <a href="">Facebook</a>
       </li>
       <li class="social-item">
-        <a href="">Youtube<a>
+        <a href="">Youtube</a>
       </li>
     </ul>
     <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
@@ -133,6 +115,34 @@
       <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML-academy">
     </a>
   </footer>
+  <section class="search popap">
+    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+				<form action="https://echo.htmlacademy.ru" method="post">
+          <div class="form-start">
+            <label>
+              Дата заезда: <input type="text" name="start" aria-label="Выберете дату заезда" placeholder="24 апреля 2017">
+              <img class="calendar" src="img/cslendar.svg" width="21" height="23" alt="календарь">
+            </label>
+          </div>
+					<div class="form-end">
+            <label>
+              Дата выезда: <input type="text" name="end" aria-label="Выберете дату выезда" placeholder="4 июля 2017">
+              <img class="calendar" src="img/cslendar.svg" width="21" height="23" alt="календарь">
+            </label>
+          </div>
+					<div class="form-adults">
+            <label>
+              Взрослые: <input type="number" name="adults" aria-label="Впишите количество взрослых" min="0" value="2">
+            </label>
+          </div>
+					<div class="form-children">
+            <label>
+              Дети: <input type="number" name="children"  aria-label="Впишите количество детей" min="0" value="0">
+            </label>
+          </div>
+					<button class="btn btn-blue" type="button">Найти</button>
+				</form>
+  </section>
 </body>
 
 </html>
