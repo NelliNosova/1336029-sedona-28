@@ -33,7 +33,7 @@
                 <li class="infrastucture-item">
                   <input type="checkbox" name="pool" id="filter-pool" checked>
                   <label for="filter-pool">Бассейн</label>
-                </li>                
+                </li>
                 <li class="infrastucture-item">
                   <input type="checkbox" name="parking" id="filter-parking">
                   <label for="filter-parking">Парковка</label>
@@ -67,16 +67,45 @@
           <div class="filter-price">
             <label>
               Стоимость в сутки (Р): <br>
-              <span class="border">от 0</span><span class="border">lо 3000</span>
-              <input type="range" name="price-item" min="0" max="3000">
+              <span class="border">от 0</span><span class="border">до 3000</span>
+              <input type="range" name="price-item" aria-label="Выберете желаемую стоимость" min="0" max="3000"
+                value="0">
             </label>
           </div>
-          <button type="submit">Показать</button>
+          <button class="btn border" type="submit">Показать</button>
         </div>
       </form>
     </section>
     <section class="results">
       <h2 class="visually-hidden">Список гостиниц</h2>
+      <span class="show-results">
+        НАЙДЕНО: 3
+      </span>
+      <section>
+        <h4 class="visually-hidden">Сортировка результатов</h4>
+        <ul class="sorting">
+          <li class="sorting-option">
+            <button class="btn active" type="button">По цене</button>
+          </li>
+          <li class="sorting-option">
+            <button class="btn not-active" type="button">По типу</button>
+          </li>
+          <li class="sorting-option">
+            <button class="btn not-active" type="button">По рейтингу</button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h4 class="visually-hidden">Сортировка по цене</h4>
+        <ul class="sorting-up-down">
+          <li class="sorting-down active">
+            <button class="btn active" type="button" aria-label="по убыванию"></button>
+          </li>
+          <li class="sorting-up not-active">
+            <button class="btn not-active" type="button" aria-label="по возрастанию"></button>
+          </li>
+        </ul>
+      </section>
       <ul class="hotel-list">
         <li class="hotel-item amara">
           <article>
@@ -86,8 +115,8 @@
               <p class="price">
                 Гостиница <span>От 4000 Р.</span>
               </p>
-              <a href="">Подробнее</a>
-              <button>Забронировать</button>
+              <a class="blue" href="">Подробнее</a>
+              <button class="btn brown" type="button">Забронировать</button>
             </div>
             <div class="item-info">
               <ul class="stars">
@@ -109,8 +138,8 @@
               <p class="price">
                 Мотель <span>От 3000 Р.</span>
               </p>
-              <a href="">Подробнее</a>
-              <button>Забронировать</button>
+              <a class="blue" href="">Подробнее</a>
+              <button class="btn brown" type="button">Забронировать</button>
             </div>
             <div class="item-info">
               <ul class="stars">
@@ -130,8 +159,8 @@
               <p class="price">
                 Апартаменты <span>От 2000 Р.</span>
               </p>
-              <a href="">Подробнее</a>
-              <button>Забронировать</button>
+              <a class="blue" href="">Подробнее</a>
+              <button class="btn brown" type="button">Забронировать</button>
             </div>
             <div class="item-info">
               <ul class="stars">
