@@ -24,7 +24,56 @@
     <h1 class="visually-hidden">Результаты поиска</h1>
     <section class="search">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
-      <!-- тут будет форма фильтров -->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <div class="filter">
+          <div class="filter-infrastructure">
+            <fieldset class="infrastructure">
+              <legend>Инфраструктура:</legend>
+              <ul class="infrastucture-items">
+                <li class="infrastucture-item">
+                  <input type="checkbox" name="pool" id="filter-pool" checked>
+                  <label for="filter-pool">Бассейн</label>
+                </li>                
+                <li class="infrastucture-item">
+                  <input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li class="infrastucture-item">
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-type">
+            <fieldset class="type">
+              <legend>Тип жилья:</legend>
+              <ul class="type-items">
+                <li class="type-item">
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li class="type-item">
+                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li class="type-item">
+                  <input type="checkbox" name="apartament" id="filter-apartament" checked>
+                  <label for="filter-apartament">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-price">
+            <label>
+              Стоимость в сутки (Р): <br>
+              <span class="border">от 0</span><span class="border">lо 3000</span>
+              <input type="range" name="price-item" min="0" max="3000">
+            </label>
+          </div>
+          <button type="submit">Показать</button>
+        </div>
+      </form>
     </section>
     <section class="results">
       <h2 class="visually-hidden">Список гостиниц</h2>
@@ -107,7 +156,7 @@
         <a href="">Facebook</a>
       </li>
       <li class="social-item">
-        <a href="">Youtube<a>
+        <a href="">Youtube</a>
       </li>
     </ul>
     <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
