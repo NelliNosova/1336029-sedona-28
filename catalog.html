@@ -65,12 +65,24 @@
             </fieldset>
           </div>
           <div class="filter-price">
+            <!-- если бы я знала JS я бы сделала что-то вроде того что ниже написано, но я пока его не знаю, и со слов авторов, 
+              мы даже ползунок с двумя значениями, пока просто рисовать будем, а не делать, как полагаеся
+            <label for="price-item"> Стоимость в сутки (Р):</label><br>
+            <label>от
+              <output class="border" name="filter-price-min">0</output>
+            </label>            
+            <label>до
+              <output class="border" name="filter-price-max">3000</output>
+            </label>
+            <input type="range" name="price-item" aria-label="Выберете желаемую стоимость" min="0" max="3820" value="3000">            
+            -->
             <label>
               Стоимость в сутки (Р): <br>
               <span class="border">от 0</span><span class="border">до 3000</span>
-              <input type="range" name="price-item" aria-label="Выберете желаемую стоимость" min="0" max="3000"
-                value="0">
+              <input type="range" name="price-item" aria-label="Выберете желаемую стоимость" min="0" max="3820"
+                value="3000">
             </label>
+            
           </div>
           <button class="btn border" type="submit">Показать</button>
         </div>
