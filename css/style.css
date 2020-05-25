@@ -65,6 +65,24 @@ a {
     white-space: nowrap;
 }
 
+/*====General====*/
+.btn {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: 700;  
+  color: var(--basic-white);
+  text-transform: inherit;
+}
+
+.btn-brown {
+  background-color: var(--basic-brown);
+}
+
+.btn-blue {
+  background-color: var(--basic-blue);
+}
+
 /*====Main-navigation====*/
 
 .main-navigation {
@@ -87,3 +105,56 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
 }  
+
+/*====advantage====*/
+
+.advantage {
+  line-height: 26px;
+  background-color: transparent;
+}
+
+.advantage .larger-text {
+  font-size: 21px;  
+  font-weight: 700;
+}
+
+/*====booking====*/
+
+.booking {
+  line-height: 24px;
+  background-color: transparent;
+}
+
+.booking .larger-text {
+  font-size: 30px;  
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.booking .btn {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/*====main-footer====*/
+
+.main-footer {
+  
+  background-color: var(--basic-transparent-white);
+}
+
+.main-footer {
+  line-height: 26px;
+}
+
+.main-footer .contacts,
+.main-footer .contacts-phone {
+  font-size: 21px;  
+  font-weight: 700;
+}
+
+.main-footer a {
+  color: inherit;
+}
+
+
