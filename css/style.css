@@ -83,6 +83,12 @@ a {
   background-color: var(--basic-blue);
 }
 
+.booking .btn,
+.search .btn {
+  font-size: 21px;
+  line-height: 26px;
+}
+
 /*====Main-navigation====*/
 
 .main-navigation {
@@ -131,10 +137,7 @@ a {
   font-weight: 700;
 }
 
-.booking .btn {
-  font-size: 21px;
-  line-height: 26px;
-}
+
 
 /*====main-footer====*/
 
@@ -151,10 +154,23 @@ a {
 .main-footer .contacts-phone {
   font-size: 21px;  
   font-weight: 700;
+  text-align: left;
 }
 
 .main-footer a {
   color: inherit;
 }
 
+/*====search====*/
+
+.search {
+  background-color: var(--basic-white);
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.search .input {
+  font: inherit;
+  background-color: var(--basic-light-grey);
+}
 
