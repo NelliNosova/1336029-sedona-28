@@ -70,8 +70,10 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  font-weight: 700;  
+  font-weight: 700;
+  text-align: center;  
   color: var(--basic-white);
+  vertical-align: middle;
   text-transform: inherit;
 }
 
@@ -99,6 +101,10 @@ a {
 
 .main-navigation a {
   color: inherit;
+}
+
+.site-navigation {
+  list-style: none;
 }
 
 /*====Promo====*/
@@ -161,16 +167,25 @@ a {
   color: inherit;
 }
 
+.social {
+  list-style: none;
+}
+
 /*====search====*/
 
 .search {
   background-color: var(--basic-white);
   line-height: 26px;
   font-weight: 700;
+  text-align: left;
 }
 
-.search .input {
+.search input {
   font: inherit;
   background-color: var(--basic-light-grey);
+  border: none;
 }
 
+.form-age input {
+  text-align: center;
+}
