@@ -28,6 +28,7 @@
   --basic-dark-grey: #a9a9a9;
   --basic-light-grey: #f2f2f2;
   --basic-brown: #766357;
+  --basic-grey-brown: #666666;  
 }
 
 /*====Global====*/
@@ -75,6 +76,7 @@ a {
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: inherit;
+  border: none;
 }
 
 .btn-brown {
@@ -90,6 +92,9 @@ a {
   font-size: 21px;
   line-height: 26px;
 }
+
+/*==========index.html==========*/
+
 
 /*====Main-navigation====*/
 
@@ -188,4 +193,36 @@ a {
 
 .form-age input {
   text-align: center;
+}
+
+/*==========catalog.html==========*/
+
+
+/*====hotel-list====*/
+
+.hotel-list {
+  text-align: left;
+  list-style: none;
+}
+
+.hotel-list h3 {
+  font-size: 21px;
+  line-height: 26px;  
+}
+
+.hotel-list .price {
+  color: var(--basic-dark);
+}
+
+.hotel-list .stars {
+  list-style: none;
+}
+
+.hotel-list .rating {
+  color: var(--basic-grey-brown);
+  background-color: var(--basic-light-grey);
+}
+
+.hotel-list a {
+  color: inherit;
 }
