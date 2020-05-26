@@ -22,13 +22,20 @@
   --basic-text: #000000;
   --basic-white: #ffffff;
   --basic-transparent-white: rgba(255, 255, 255, 0.9);
+  --basic-btn-opscity: rgba(225, 225, 225, 0.3);
   --basic-blue: #81b3d2;
+  --basic-dark-blue: #669ec0;
+  --basic-darkest-blue: #5496bd;
   --basic-dark: #333333;
   --basic-grey: #eeeeee;
   --basic-dark-grey: #a9a9a9;
   --basic-light-grey: #f2f2f2;
   --basic-brown: #766357;
+  --basic-dark-brown: #604e43;
+  --basic-darkest-brown: #503e33;
   --basic-grey-brown: #666666;  
+  --basic-input-hover: #ebebeb;
+  --basik-input-border: #e5e5e5;  
 }
 
 /*====Global====*/
@@ -83,14 +90,50 @@ a {
   background-color: var(--basic-brown);
 }
 
+.btn-brown:hover,
+.btn-brown:focus {
+  background-color: var(--basic-dark-brown);
+}
+
+.btn-brown:active {
+  color: var(--basic-btn-opscity);
+  background-color: var(--basic-darkest-brown);  
+}
+
 .btn-blue {
   background-color: var(--basic-blue);
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.social:hover,
+.social:focus {
+  background-color: var(--basic-dark-blue);
+}
+
+.btn-blue:active,
+.social:active {
+  color: var(--basic-btn-opscity);
+  background-color: var(--basic-darkest-blue);  
 }
 
 .booking .btn,
 .search .btn {
   font-size: 21px;
   line-height: 26px;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.hotel-list title:hover,
+.hotel-list title:focus {
+  color: var(--basic-blue);
+}
+
+.main-navigation a:active,
+.hotel-list a:active  {
+  color: var(--basic-text);
+  opacity: 0.3;
 }
 
 /*==========index.html==========*/
@@ -107,6 +150,8 @@ a {
 .main-navigation a {
   color: inherit;
 }
+
+
 
 .site-navigation {
   list-style: none;
@@ -174,6 +219,7 @@ a {
 
 .social {
   list-style: none;
+  background-color: var(--basic-blue);
 }
 
 /*====search====*/
@@ -193,6 +239,15 @@ a {
 
 .form-age input {
   text-align: center;
+}
+
+.search input:hover {
+  background-color: var(--basic-input-hover);
+}
+
+.search input:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basik-input-border);
 }
 
 /*==========catalog.html==========*/
@@ -223,6 +278,6 @@ a {
   background-color: var(--basic-light-grey);
 }
 
-.hotel-list a {
+.hotel-list .title {
   color: inherit;
 }
