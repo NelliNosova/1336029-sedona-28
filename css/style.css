@@ -124,13 +124,13 @@ a {
 
 .main-navigation a:hover,
 .main-navigation a:focus,
-.hotel-list title:hover,
-.hotel-list title:focus {
+.hotel-list .title:hover,
+.hotel-list .title:focus {
   color: var(--basic-blue);
 }
 
 .main-navigation a:active,
-.hotel-list a:active {
+.hotel-list .title:active {
   color: var(--basic-text);
   opacity: 0.3;
 }
