@@ -2,18 +2,16 @@
 
 @font-face {
   font-family: PT Sans;
-  src: url(ptsans.woff2),
-       url(ptsans.woff);
-       font-weight: 400;
-       font-style: normal;
+  src: url(ptsans.woff2), url(ptsans.woff);
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: PT Sans;
-  src: url(ptsansbold.woff2),
-       url(ptsansbold.woff);
-       font-weight: 700;
-       font-style: normal;
+  src: url(ptsansbold.woff2), url(ptsansbold.woff);
+  font-weight: 700;
+  font-style: normal;
 }
 
 /*====Variables====*/
@@ -33,9 +31,10 @@
   --basic-brown: #766357;
   --basic-dark-brown: #604e43;
   --basic-darkest-brown: #503e33;
-  --basic-grey-brown: #666666;  
+  --basic-grey-brown: #666666;
   --basic-input-hover: #ebebeb;
-  --basik-input-border: #e5e5e5;  
+  --basik-input-border: #e5e5e5;
+  --basic-copyright-active: #bdbbbc;
 }
 
 /*====Global====*/
@@ -54,23 +53,23 @@ body {
   background-color: var(--basic-white);
 }
 
-img { 
+img {
   max-width: 100%;
   height: auto;
 }
 
-a { 
+a {
   text-decoration: none;
 }
 
 .visually-hidden {
-    position: absolute;
-    height: 1px; 
-    width: 1px;
-    overflow: hidden;
-    clip: rect(1px 1px 1px 1px); 
-    clip: rect(1px, 1px, 1px, 1px);
-    white-space: nowrap;
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
 /*====General====*/
@@ -79,7 +78,7 @@ a {
   font-size: inherit;
   line-height: inherit;
   font-weight: 700;
-  text-align: center;  
+  text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
   text-transform: inherit;
@@ -97,7 +96,7 @@ a {
 
 .btn-brown:active {
   color: var(--basic-btn-opscity);
-  background-color: var(--basic-darkest-brown);  
+  background-color: var(--basic-darkest-brown);
 }
 
 .btn-blue {
@@ -114,7 +113,7 @@ a {
 .btn-blue:active,
 .social:active {
   color: var(--basic-btn-opscity);
-  background-color: var(--basic-darkest-blue);  
+  background-color: var(--basic-darkest-blue);
 }
 
 .booking .btn,
@@ -131,13 +130,15 @@ a {
 }
 
 .main-navigation a:active,
-.hotel-list a:active  {
+.hotel-list a:active {
   color: var(--basic-text);
   opacity: 0.3;
 }
 
+.main-navigation a:not([href]) {
+  color: var(--basic-brown);
+}
 /*==========index.html==========*/
-
 
 /*====Main-navigation====*/
 
@@ -150,8 +151,6 @@ a {
 .main-navigation a {
   color: inherit;
 }
-
-
 
 .site-navigation {
   list-style: none;
@@ -166,7 +165,7 @@ a {
   background-image: url("/img/background_photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-}  
+}
 
 /*====advantage====*/
 
@@ -176,7 +175,7 @@ a {
 }
 
 .advantage .larger-text {
-  font-size: 21px;  
+  font-size: 21px;
   font-weight: 700;
 }
 
@@ -188,17 +187,14 @@ a {
 }
 
 .booking .larger-text {
-  font-size: 30px;  
+  font-size: 30px;
   line-height: 24px;
   font-weight: 700;
 }
 
-
-
 /*====main-footer====*/
 
 .main-footer {
-  
   background-color: var(--basic-transparent-white);
 }
 
@@ -208,7 +204,7 @@ a {
 
 .main-footer .contacts,
 .main-footer .contacts-phone {
-  font-size: 21px;  
+  font-size: 21px;
   font-weight: 700;
   text-align: left;
 }
@@ -220,6 +216,19 @@ a {
 .social {
   list-style: none;
   background-color: var(--basic-blue);
+}
+
+.social svg {
+  fill: var(--basic-white);
+}
+
+.main-footer .copyright:hover,
+.main-footer .copyright:focus {
+  fill: var(--basic-blue);
+}
+
+.main-footer .copyright:active {
+  fill: var(--basic-copyright-active);
 }
 
 /*====search====*/
@@ -250,8 +259,22 @@ a {
   border: 2px solid var(--basik-input-border);
 }
 
-/*==========catalog.html==========*/
+.search .calendar {
+  fill: var(--basic-dark-grey);
+  background-color: var(--basic-light-grey);
+  border: none;
+}
 
+.search .calendar:hover,
+.search .calendar:focus {
+  fill: var(--basic-text);
+}
+
+.search .calendar:active {
+  fill: var(--basic-copyright-active);
+}
+
+/*==========catalog.html==========*/
 
 /*====hotel-list====*/
 
@@ -262,7 +285,7 @@ a {
 
 .hotel-list h3 {
   font-size: 21px;
-  line-height: 26px;  
+  line-height: 26px;
 }
 
 .hotel-list .price {
