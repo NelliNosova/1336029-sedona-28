@@ -41,7 +41,7 @@
 
 /*====Global====*/
 
-body {
+body {  
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -53,9 +53,9 @@ body {
 }
 
 .box-body {
-  min-width: 1200px;
-  margin: 0;
-  padding: 20;
+  width: 1200px;
+  margin: auto;
+
 }
 
 img {
