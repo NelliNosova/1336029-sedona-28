@@ -119,7 +119,7 @@ a {
 }
 
 .booking .btn,
-.search .btn {
+.search-popap .btn {
   font-size: 21px;
   line-height: 26px;
 }
@@ -272,16 +272,16 @@ a {
   fill: var(--basic-copyright-active);
 }
 
-/*====search====*/
+/*====search-popap====*/
 
-.search {
+.search-popap {
   background-color: var(--basic-white);
   line-height: 26px;
   font-weight: 700;
   text-align: left;
 }
 
-.search input {
+.search-popap input {
   font: inherit;
   text-transform: inherit;
   background-color: var(--basic-light-grey);
@@ -292,31 +292,72 @@ a {
   text-align: center;
 }
 
-.search input:hover {
+.search-popap input:hover {
   background-color: var(--basic-input-hover);
 }
 
-.search input:focus {
+.search-popap input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--basik-input-border);
 }
 
-.search .calendar {
+.search-popap .calendar {
   fill: var(--basic-dark-grey);
   background-color: var(--basic-light-grey);
   border: none;
 }
 
-.search .calendar:hover,
-.search .calendar:focus {
+.search-popap .calendar:hover,
+.search-popap .calendar:focus {
   fill: var(--basic-text);
 }
 
-.search .calendar:active {
+.search-popap .calendar:active {
   fill: var(--basic-copyright-active);
 }
 
 /*==========catalog.html==========*/
+
+/*====search====*/
+
+.search {
+  background-color: var(--basic-darkest-blue);
+  background-image: url(/img/background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.search .filter {
+  color: var(--basic-white);
+  text-transform: inherit;
+}
+
+.search fieldset {
+  border: none;
+}
+
+.filter legend,
+.filter-price p {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter .border {
+  border: 2px solid var(--basic-white);
+  border-radius: 2px;
+}
+
+
+.filter .btn {
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.filter .btn:hover,
+.filter .btn:focus {
+  color: var(--basic-text);
+  background-color: var(--basic-white);
+}
 
 /*====hotel-list====*/
 
