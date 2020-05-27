@@ -184,6 +184,40 @@ a {
   font-weight: 700;
 }
 
+.advantage-items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage-items .full {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.advantage-items h3,
+.real-city h4 {
+  font-weight: bold;
+  font-size: 21px;  
+}
+
+.advantage-items .real-city {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantage-items .grey {
+  background-color: var(--basic-grey);
+}
+
+.real-city p,
+.grey p {
+  color: var(--basic-dark);
+}
+
+
+
 /*====booking====*/
 
 .booking {
