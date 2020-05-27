@@ -20,6 +20,7 @@
   --basic-text: #000000;
   --basic-white: #ffffff;
   --basic-transparent-white: rgba(255, 255, 255, 0.9);
+  --basic-transparent-black: rgba(0, 0, 0, 0.3);
   --basic-btn-opscity: rgba(225, 225, 225, 0.3);
   --basic-blue: #81b3d2;
   --basic-dark-blue: #669ec0;
@@ -35,6 +36,7 @@
   --basic-input-hover: #ebebeb;
   --basik-input-border: #e5e5e5;
   --basic-copyright-active: #bdbbbc;
+  --basic-sort: #cacaca;  
 }
 
 /*====Global====*/
@@ -336,6 +338,12 @@ a {
   border: none;
 }
 
+.filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .filter legend,
 .filter-price p {
   font-size: 16px;
@@ -357,6 +365,60 @@ a {
 .filter .btn:focus {
   color: var(--basic-text);
   background-color: var(--basic-white);
+}
+
+/*====results===*/
+
+.results .show-results {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.results .sorting-rating {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.results ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sorting-rating .btn {
+  color: var(--basic-transparent-black);
+  background-color: transparent;
+  border-bottom: 1px dashed var(--basic-blue);
+}
+
+.sorting-rating .btn:hover,
+.sorting-rating .btn:focus {
+  color: var(--basic-blue);
+}
+
+.sorting-rating .btn:active {
+  color: var(--basic-text);
+  border: none;
+}
+
+.sorting-rating .active {
+  color: var(--basic-blue);
+  border: none;
+}
+
+.sorting-up-down .btn {
+  fill: var(--basic-sort);
+  background-color: transparent;
+}
+
+.sorting-up-down .btn:hover,
+.sorting-up-down .btn:focus {
+  fill: var(--basic-text);
+}
+
+.sorting-up-down .btn:active {
+  fill: var(--basic-blue);
 }
 
 /*====hotel-list====*/
