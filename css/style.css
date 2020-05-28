@@ -78,6 +78,23 @@ a {
   white-space: nowrap;
 }
 
+/*====Grid====*/
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+}
+
+.box-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 /*====General====*/
 .btn {
   font-family: inherit;
@@ -111,13 +128,13 @@ a {
 
 .btn-blue:hover,
 .btn-blue:focus,
-.social:hover,
-.social:focus {
+.social a:hover,
+.social a:focus {
   background-color: var(--basic-dark-blue);
 }
 
 .btn-blue:active,
-.social:active {
+.social a:active {
   color: var(--basic-btn-opscity);
   background-color: var(--basic-darkest-blue);
 }
@@ -159,8 +176,10 @@ a {
   color: inherit;
 }
 
-.site-navigation {
-  margin: 0;
+.main-navigation .site-navigation {
+  display: flex;
+  justify-content: space-around; 
+  margin: 0;  
   padding: 0;
   list-style: none;
 }
@@ -179,20 +198,29 @@ a {
 /*====advantage====*/
 
 .advantage {
-  line-height: 26px;
+  line-height: 27px;
   background-color: transparent;
 }
 
-.advantage .box-white {
+.advantage .box-white {  
+  margin: 0;
+  margin-top: -63px;
+  margin-bottom: 51px;
+  padding: 0;
+  padding-top: 77px;
   background-image: url("../img/white.png");
 }
 
 .advantage .larger-text {
+  margin-bottom: 42px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .advantage-items {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content min-content;
+  grid-template-columns; 1fr 1fr 1fr:
   margin: 0;
   padding: 0;
   list-style: none;  
@@ -207,6 +235,41 @@ a {
   background-color: var(--basic-blue);
 }
 
+.advantage-items .left {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.advantage-items .right {
+  grid-row-start: 3;  
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.advantage-items .advantage-item_1,
+.advantage-items .advantage-item_2 {
+  display: flex;   
+}
+
+.advantage-items .number {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.advantage-item h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage-item_1 .content,
+.advantage-item_2 .content {
+  min-width: 400px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .advantage-items h3,
 .real-city h4 {
   font-weight: bold;
@@ -214,14 +277,33 @@ a {
 }
 
 .advantage-items .real-city {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.advantage-items .grey {
+.advantage-items .grey {  
+  padding: 49px;
   background-color: var(--basic-grey);
 }
+
+.advantage-items .grey1 {
+  grid-row-start: 5;
+  grid-column-start: 1;  
+}
+
+.advantage-items .grey2 {
+  grid-row-start: 5;
+  grid-column-start: 2;  
+}
+
+.advantage-items .grey3 {
+  grid-row-start: 5;
+  grid-column-start: 3;  
+}
+
 
 .real-city p,
 .grey p {
@@ -233,19 +315,32 @@ a {
 /*====booking====*/
 
 .booking {
-  line-height: 24px;
+  line-height: 25px;
   background-color: transparent;
 }
 
 .booking .larger-text {
+  padding-top: 26px;
+  padding-bottom: 2px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.booking .btn {
+  display: inline-block;
+  width: 568px;
+  height: 86px;
+  margin-top: 28px;
+}
+
 /*====main-footer====*/
 
 .main-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: -120px;
   background-color: var(--basic-transparent-white);
 }
 
@@ -253,26 +348,44 @@ a {
   line-height: 26px;
 }
 
-.main-footer .contacts,
-.main-footer .contacts-phone {
+.main-footer .contacts {
   font-size: 21px;
   font-weight: 700;
   text-align: left;
 }
 
 .main-footer a {
+  display: inline-block;
+  width: 46px;
+  height: 48px;
   color: inherit;
 }
 
-.social {
+.main-footer .social {  
+  display: flex;
+  justify-content: space-between;
+  min-width: 150px;
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none;  
+}
+
+.main-footer .social-item {
+  width: 46px;
+  height: 48px;
   background-color: var(--basic-blue);
 }
 
 .social svg {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;  
   fill: var(--basic-white);
+}
+
+.main-footer .copyright {
+  display: flex;
+  align-items: baseline;
 }
 
 .main-footer .copyright:hover,
