@@ -2,16 +2,16 @@
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsans.woff2") format("woff2"),
-       url("../fonts/ptsans.woff") format("woff");
+  src: url("../fonts/pt-sans-v11-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff") format("woff2"),
+       url("../fonts/pt-sans-v11-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PT Sans";
-  src: url("../fonts/ptsansbold.woff2") format("woff2"),
-       url("../fonts/ptsansbold.woff") format("woff");
+  src: url("../fonts/pt-sans-v11-latin-ext_latin_cyrillic-ext_cyrillic-700.woff2") format("woff2"),
+       url("../fonts/pt-sans-v11-latin-ext_latin_cyrillic-ext_cyrillic-700.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -171,7 +171,7 @@ a {
   padding-top: 35px;
   padding-bottom: 81px;
   background-color: var(--basic-dark);
-  background-image: url("/img/background_photo.jpg");
+  background-image: url("../img/background_photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -181,6 +181,10 @@ a {
 .advantage {
   line-height: 26px;
   background-color: transparent;
+}
+
+.advantage .box-white {
+  background-image: url("../img/white.png");
 }
 
 .advantage .larger-text {
@@ -330,7 +334,7 @@ a {
 
 .search {
   background-color: var(--basic-darkest-blue);
-  background-image: url(/img/background.jpg);
+  background-image: url("../img/background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
