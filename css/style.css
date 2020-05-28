@@ -1,15 +1,17 @@
 /*====Fonts====*/
 
 @font-face {
-  font-family: PT Sans;
-  src: url(/fonts/ptsans.woff2), url(/fonts/ptsans.woff);
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans.woff2") format("woff2"),
+       url("../fonts/ptsans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: PT Sans;
-  src: url(/fonts/ptsansbold.woff2), url(/fonts/ptsansbold.woff);
+  font-family: "PT Sans";
+  src: url("../fonts/ptsansbold.woff2") format("woff2"),
+       url("../fonts/ptsansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -189,7 +191,11 @@ a {
 .advantage-items {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style: none;  
+}
+
+.advantage-item p {
+  line-height: 21px;
 }
 
 .advantage-items .full {
