@@ -222,14 +222,10 @@ a {
   background-image: url("../img/background_photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .promo .welcome {
   margin-top: 43px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 /*====advantage====*/
@@ -249,9 +245,20 @@ a {
 }
 
 .advantage .larger-text {
-  margin-bottom: 42px;
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  margin-top: 21px;
+  margin-left: 300px;
+  margin-right: 300px;
   font-size: 21px;
-  font-weight: 700;
+  font-weight: 700; 
+}
+
+.advantage .content_5 {
+  margin-top: 39px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .advantage-items {
@@ -290,14 +297,23 @@ a {
   display: flex;   
 }
 
-.advantage-items .number {
-  margin-top: 25px;
-  margin-bottom: 25px;
+
+.full .content-number {
+  /*outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;*/
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 51px;
+  margin-right: 50px;
 }
 
-.advantage-item h3 {
-  margin: 0;
-  padding: 0;
+.full .content-text {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 49px;
 }
 
 .advantage-item_1 .content,
@@ -306,6 +322,23 @@ a {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+.advantage-item_1 .content {  
+  /*outline: 5px solid rgba(0, 255, 0, 0.3);*/
+  outline-offset: -5px;
+  margin-top: 46px;
+}
+
+.full .content-title {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  margin-left: 125px;
+  margin-right: 125px;  
+  padding: 0;
+  line-height: 22px;
+}
+
 
 .advantage-items h3,
 .real-city h4 {
