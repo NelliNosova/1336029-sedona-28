@@ -172,16 +172,48 @@ a {
   background-color: transparent;
 }
 
-.main-navigation a {
+.main-navigation a {  
   color: inherit;
 }
 
+.main-navigation div.logo {
+  padding-left: 531px;
+  padding-right: 531px;
+}
+
 .main-navigation .site-navigation {
-  display: flex;
-  justify-content: space-around; 
-  margin: 0;  
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 0; 
+  margin-top: -79px; 
   padding: 0;
   list-style: none;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.site-navigation li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.site-navigation li:nth-child(4n-3) {
+  margin-left: 72px;
+}
+
+.site-navigation li:nth-child(4n-2) {
+  margin-left: 135px;
+}
+
+.site-navigation li:nth-child(4n-1) {
+  margin-left: 418px;
+}
+
+
+.site-navigation li:nth-child(4n) {
+  margin-left: 148px;
 }
 
 /*====Promo====*/
@@ -329,6 +361,7 @@ a {
 
 .booking .btn {
   display: inline-block;
+  text-align: center;
   width: 568px;
   height: 86px;
   margin-top: 28px;
@@ -356,6 +389,7 @@ a {
 
 .main-footer a {
   display: inline-block;
+  text-align: center;
   width: 46px;
   height: 48px;
   color: inherit;
@@ -378,6 +412,7 @@ a {
 
 .social svg {
   display: inline-block;
+  text-align: center;
   margin-top: auto;
   margin-bottom: auto;  
   fill: var(--basic-white);
