@@ -188,15 +188,12 @@ a {
   margin-top: -79px; 
   padding: 0;
   list-style: none;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .site-navigation li {
   margin-top: 15px;
   margin-bottom: 15px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+
 }
 
 .site-navigation li:nth-child(4n-3) {
@@ -218,13 +215,21 @@ a {
 
 /*====Promo====*/
 
-.promo {
+.promo {  
   padding-top: 35px;
   padding-bottom: 81px;
   background-color: var(--basic-dark);
   background-image: url("../img/background_photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.promo .welcome {
+  margin-top: 43px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 /*====advantage====*/
