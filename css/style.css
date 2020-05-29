@@ -309,9 +309,10 @@ a {
 .full .content-text {
   display: inline-block;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 9px;
   margin-left: 50px;
   margin-right: 49px;
+  line-height: 22px;
 }
 
 .advantage-item_1 .content,
@@ -324,6 +325,11 @@ a {
 .advantage-item_1 .content {    
   margin-top: 46px;
 }
+
+.advantage-item_2 .content {
+  margin-top: 49px;
+}
+
 
 .full .content-title {
   display: inline-block;
@@ -351,10 +357,6 @@ a {
   list-style: none;
 }
 
-.real-city .real-city-item {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
 
 .real-city .real-city-item:last-child {
   margin-left: 3px;
@@ -367,8 +369,6 @@ a {
 }
 
 .real-city-item p {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
   display: inline-block;
   text-align: center;
   margin-left: 50px;
@@ -376,9 +376,27 @@ a {
   line-height: 21px;
 }
 
-.advantage-items .grey {  
-  padding: 49px;
+.advantage-items .grey { 
+  width: 400px;
+  padding-top: 26px;
+  padding-bottom: 39px;
+  line-height: 21px;
   background-color: var(--basic-grey);
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.advantage-items .grey-number {
+  display: inline-block;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.advantage-items .advantage-item-grey {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  
 }
 
 .advantage-items .grey1 {
