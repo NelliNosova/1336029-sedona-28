@@ -457,8 +457,6 @@ a {
   font-size: 21px;
   font-weight: 700;
   text-align: left;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-footer p.contacts {
@@ -474,8 +472,6 @@ a {
   margin: 0;
   margin-top: 9px;
   margin-left: 56px;
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-footer a {
@@ -487,8 +483,6 @@ a {
 }
 
 .main-footer .social {  
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
   display: flex;
   justify-content: space-between;
   min-width: 150px;
@@ -517,8 +511,6 @@ a {
   min-width: 300px;
   margin: 0;
   margin-top: 25px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .main-footer .by {
@@ -537,22 +529,61 @@ a {
 /*====search-popap====*/
 
 .search-popap {
+  width: 568px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
   background-color: var(--basic-white);
   line-height: 26px;
   font-weight: 700;
   text-align: left;
 }
 
+.search-popap form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 63px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.search-popap .input-container {
+  display: flex;  
+}
+
+
+.search-popap .form-age {
+  width: 226px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
 .search-popap input {
+  margin-left: 20px;
+  height: 30px;
+}
+
+.form-start input,
+.form-end input {
+  flex-grow: 2;
+}
+
+
+.form-age input {
+  text-align: center;
+}
+
+.search-popap input {
+  margin-bottom: 39px;
   font: inherit;
   text-transform: inherit;
   background-color: var(--basic-light-grey);
   border: none;
 }
 
-.form-age input {
-  text-align: center;
-}
+
 
 .search-popap input:hover {
   background-color: var(--basic-input-hover);
