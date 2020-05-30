@@ -72,52 +72,53 @@
               <div class="border">
                 <span class="border-left">от 0</span>
                 <span class="border-right">до 3000</span>
-              </div>
-              
-              <div class="range"></div>          
-            </div>
-            <button class="btn border" type="submit">Показать</button>
+              </div>              
+              <div class="range"></div> 
+              <button class="btn border" type="submit">Показать</button>         
+            </div>            
           </div>
         </form>
       </section>
       <section class="results">
         <h2 class="visually-hidden">Список гостиниц</h2>
-        <span class="show-results">
-          НАЙДЕНО: 3
-        </span>
-        <section class="sorting-rating">
-          <h4>Сортировка</h4>
-          <ul class="sorting">
-            <li class="sorting-option">
-              <button class="btn active" type="button">По цене</button>
-            </li>
-            <li class="sorting-option">
-              <button class="btn not-active" type="button">По типу</button>
-            </li>
-            <li class="sorting-option">
-              <button class="btn not-active" type="button">По рейтингу</button>
-            </li>
-          </ul>
-        </section>
-        <section class="sorting-price">
-          <h4 class="visually-hidden">Сортировка по цене</h4>
-          <ul class="sorting-up-down">
-            <li class="sorting-down active">
-              <button class="btn active" type="button" aria-label="по убыванию">
-                <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 0L0 10H11L5.5 0Z"/>
-                </svg>                  
-              </button>
-            </li>
-            <li class="sorting-up not-active">
-              <button class="btn not-active" type="button" aria-label="по возрастанию">
-                <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M5.5 10L0 0H11"/>
-                </svg>                  
-              </button>
-            </li>
-          </ul>
-        </section>
+        <div class="sorting">
+          <span class="show-results">
+            НАЙДЕНО: 3
+          </span>
+          <section class="sorting-rating">
+            <h4>Сортировка:</h4>
+            <ul class="sorting-list">
+              <li class="sorting-option">
+                <button class="btn active" type="button">По цене</button>
+              </li>
+              <li class="sorting-option">
+                <button class="btn not-active" type="button">По типу</button>
+              </li>
+              <li class="sorting-option">
+                <button class="btn not-active" type="button">По рейтингу</button>
+              </li>
+            </ul>
+          </section>
+          <section class="sorting-price">
+            <h4 class="visually-hidden">Сортировка по цене</h4>
+            <ul class="sorting-up-down">
+              <li class="sorting-down ">
+                <button class="btn not-active" type="button" aria-label="по убыванию">
+                  <svg width="11" height="10" viewBox="0 0 11 10"  xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 0L0 10H11L5.5 0Z"/>
+                  </svg>                  
+                </button>
+              </li>
+              <li class="sorting-up not-active">
+                <button class="btn active" type="button" aria-label="по возрастанию">
+                  <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.5 10L0 0H11"/>
+                  </svg>                  
+                </button>
+              </li>
+            </ul>
+          </section>
+        </div>        
         <ul class="hotel-list">
           <li class="hotel-item amara">
             <article>
