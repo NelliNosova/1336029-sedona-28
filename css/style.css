@@ -453,6 +453,7 @@ a {
 }
 
 .main-footer {
+  
   line-height: 26px;
 }
 
@@ -595,9 +596,7 @@ a {
 .search-popap .btn {
   display: inline-block;
   text-align: center;
-  height: 58px;
- /* padding-top: 16px;
-  padding-left: 16px;*/
+  height: 58px;  
 }
 
 .search-popap input:hover {
@@ -786,6 +785,7 @@ a {
 
 .results .sorting-list {
   display: flex;
+  align-items: flex-start;
   margin: 0;
   margin-top: 2px;
   margin-left: 33px;  
@@ -853,19 +853,118 @@ a {
   line-height: 26px;
 }
 
+.results .hotel-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.results article {
+  display: flex;  
+  margin: 0;
+  margin-top: 26px;
+  margin-bottom: 30px;
+  margin-left: 73px;
+  margin-right: 73px;
+}
+
+
+
+.results .item-image {
+  margin-top: 5px;
+  margin-right: 29px;
+}
+
+.hotel-list h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-list .item-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 258px;  
+
+}
+
+.item-content .price {
+  margin: 0;
+  margin-top: 6px;
+}
+
+.hotel-list .price-title {
+  display: inline-block;
+  width: 116px;
+  
+}
+
+.hotel-list .hotel-botton {
+  margin: 0;
+  margin-top: 14px;
+}
+
+.hotel-list .btn-blue {
+  display: inline-block;
+  text-align: center;  
+  width: 108px;
+  height: 23px;
+  margin-right: 4px;
+  padding-top: 4px;
+}
+
+.hotel-list .btn-brown {
+  display: inline-block;
+  text-align: center;
+  width: 142px;
+  height: 27px;
+}
+
+.hotel-list .item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 5px;  
+  width: 125px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
 .hotel-list .price {
   color: var(--basic-dark);
 }
 
+
 .hotel-list .stars {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.hotel-list .star {  
+  margin-right: 5px;
+}
+
+.hotel-list .star:last-child {
+  margin-right: 0;
+}
+
 .hotel-list .rating {
+  display: inline-block;  
+  text-align: center;
+  align-self: flex-end;
+  width: 110px;
+  height: 23px;
+  padding-top: 4px;
   color: var(--basic-grey-brown);
   background-color: var(--basic-light-grey);
+}
+
+.hotel-item {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .hotel-list a.title {
