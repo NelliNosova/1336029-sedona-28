@@ -748,6 +748,8 @@ a {
 
 /*====results===*/
 
+
+
 .results .sorting {
   display: flex;
   padding-top: 29px;
@@ -925,9 +927,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
   margin-top: 5px;  
+  margin-left: auto;
   width: 125px;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .hotel-list .price {
@@ -958,13 +959,9 @@ a {
   width: 110px;
   height: 23px;
   padding-top: 4px;
+  margin-bottom: 10px;
   color: var(--basic-grey-brown);
   background-color: var(--basic-light-grey);
-}
-
-.hotel-item {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .hotel-list a.title {
