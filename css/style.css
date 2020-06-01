@@ -169,6 +169,7 @@ a {
 /*====Main-navigation====*/
 
 .main-navigation {
+  position: relative;
   line-height: 26px;
   font-weight: 700;
   background-color: transparent;
@@ -176,11 +177,6 @@ a {
 
 .main-navigation a {  
   color: inherit;
-}
-
-.main-navigation div.logo {
-  padding-left: 531px;
-  padding-right: 531px;
 }
 
 .main-navigation .site-navigation {
@@ -264,13 +260,13 @@ a {
 }
 
 .advantage-items {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content min-content;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;  
+  flex-wrap: wrap;  
   margin: 0;
   padding: 0;
   list-style: none;  
 }
+
 
 .advantage-item p {
   line-height: 21px;
@@ -279,19 +275,6 @@ a {
 .advantage-items .full {
   color: var(--basic-white);
   background-color: var(--basic-blue);
-}
-
-.advantage-items .left {
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.advantage-items .right {
-  grid-row-start: 3;  
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
 .advantage-items .advantage-item_1,
@@ -571,7 +554,8 @@ a {
 
 .search-popap input {
   height: 30px;
-}
+  padding-left: 15px;
+}  
 
 .form-start input,
 .form-end input {
