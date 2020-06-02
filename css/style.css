@@ -542,6 +542,10 @@ a {
   margin-right: 55px;
 }
 
+/*.search-popap input {
+  appearance: none;
+}*/
+
 .search-popap .input-container {
   display: flex;  
 }
@@ -729,6 +733,7 @@ a {
   color: var(--basic-text);
   background-color: var(--basic-white);
 }
+
 
 /*====results===*/
 
