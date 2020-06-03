@@ -56,7 +56,7 @@ body {
 
 .box-body {
   width: 1200px;
-  margin: auto;
+  margin: auto;  
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -85,6 +85,7 @@ a {
 }
 
 .page-body {
+  position: relative;
   height: 100%;
 
 }
@@ -417,11 +418,11 @@ a {
   color: var(--basic-dark);
 }
 
-
-
 /*====booking====*/
 
 .booking {
+  position: relative;
+  z-index: -1;
   line-height: 25px;
   background-color: transparent;
 }
@@ -434,20 +435,19 @@ a {
   font-weight: 700;
 }
 
-.booking .btn {
+.booking .btn-brown {
   display: inline-block;
   vertical-align: middle; 
   text-align: center;
   width: 568px;
   height: 86px;
-  margin-top: 28px;
+  margin-top: 29px; 
 }
 
 /*====main-footer====*/
 
 .main-footer {
   display: flex;
-/*   justify-content: space-around; */
   background-color: var(--basic-transparent-white);
 }
 
@@ -547,71 +547,89 @@ a {
 
 /*====search-popap====*/
 
-.search-popap {
+.search-popap {  
+  /* display: none; */
+  position: absolute; 
+  left: 316px;
+  box-sizing: border-box; 
   width: 568px;
   margin-left: auto;
   margin-right: auto;
-  padding: 1px;
+  padding: 1px;  
   background-color: var(--basic-white);
   line-height: 26px;
   font-weight: 700;
-  text-align: left;
+  text-align: left;   
+  background: #FFFFFF;
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);  
 }
 
-.search-popap form {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.search-popap form {  
   margin: 0;
-  margin-top: 63px;
-  margin-left: 55px;
+  margin-top: 53px;
+  margin-left: 54px;
   margin-right: 55px;
 }
 
-/*.search-popap input {
-  appearance: none;
-}*/
+.search-popap label {
+  box-sizing: border-box;
+  min-width: 110px;
+  margin-top: 6px;
+}
+
+.form-end label {
+  margin-top: 6px;
+}
 
 .search-popap .input-container {
-  display: flex;  
+  position: relative;
+  display: flex;   
+}
+
+.search-popap input {
+  height: 38px;  
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font: inherit;
+  text-transform: inherit;
+  background-color: var(--basic-light-grey);
+  border: none; 
+}  
+  
+.form-start input,
+.form-end input {
+  flex-grow: 1;  
+  margin-left: 0;  
+  padding-left: 15px; 
+}
+
+.form-end input {
+  padding-left: 14px;    
+  margin-bottom: 31px;
 }
 
 
 .search-popap .form-age {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between; 
+  margin-bottom: 25px;   
 }
 
-.search-popap input {
-  height: 30px;
-  padding-left: 15px;
-}  
-
-.form-start input,
-.form-end input {
-  flex-grow: 2;
-  margin-left: 20px;
+.form-age label {
+  margin-top: 5px;
 }
-
 
 .form-age input {
   width: 114px;
   text-align: center;
 }
 
-.search-popap input {
-  margin-bottom: 39px;
-  font: inherit;
-  text-transform: inherit;
-  background-color: var(--basic-light-grey);
-  border: none;
-}
-
 .search-popap .btn {
-  display: inline-block;
-  vertical-align: middle; 
-  text-align: center;
-  height: 58px;  
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 54px;
+  height: 58px;    
 }
 
 .search-popap input:hover {
@@ -624,9 +642,16 @@ a {
 }
 
 .search-popap .calendar {
+  position: absolute;
+  top: 9px;
+  right: 2px;
   fill: var(--basic-dark-grey);
   background-color: var(--basic-light-grey);
   border: none;
+}
+
+.form-end .calendar {
+  top: 8px;
 }
 
 .search-popap .calendar:hover,
@@ -636,6 +661,70 @@ a {
 
 .search-popap .calendar:active {
   fill: var(--basic-copyright-active);
+}
+
+.search-popap label.children {
+  box-sizing: border-box;
+  padding-left: 49px;
+}
+
+.search-popap .more-less {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background-color: transparent;
+  background-image: url("../img/rectangle.svg");  
+  background-position: top center;
+  background-repeat: no-repeat;  
+  border: none;                
+}
+
+.adults + .minus {
+  top: 18px;
+  left: 125px;
+}
+
+.adults + .plus {
+  top: 18px;
+  left: 200px;
+  background-position: top center;   
+}
+
+.adults + .plus::after {
+  content: " ";
+  position: absolute;
+  top: -5px;  
+  left: -4px;
+  width: 11px;
+  height: 12px;
+  background-image: url("../img/rectangle.svg");
+  background-position: top center;
+  background-repeat: no-repeat; 
+  transform: rotate(90deg);
+}
+
+.children + .minus {
+  top: 18px;
+  left: 358px;
+}
+
+.children + .plus {
+  top: 18px;
+  left: 433px;
+  background-position: top center;   
+}
+
+.children + .plus::after {
+  content: " ";
+  position: absolute;
+  top: -5px;  
+  left: -4px;
+  width: 11px;
+  height: 12px;
+  background-image: url("../img/rectangle.svg");
+  background-position: top center;
+  background-repeat: no-repeat; 
+  transform: rotate(90deg);
 }
 
 /*==========catalog.html==========*/
