@@ -141,15 +141,35 @@
               <label class="adults" for="adults">
                 Взрослые: 
               </label>
-              <button class="more-less minus" type="button" aria-label="меньше"></button>                
-              <input class="adults" type="text" name="adults" id="adults" aria-label="Впишите количество взрослых" value="2">
-              <button class="more-less plus" type="button" aria-label="больше"></button>                
+              <div class="plus-minus">
+                <button class="more-less minus" type="button" aria-label="меньше">
+                  <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3"/>
+                  </svg>
+                </button>                
+                <input class="adults" type="text" name="adults" id="adults" aria-label="Впишите количество взрослых" value="2">
+                <button class="more-less plus" type="button" aria-label="больше">
+                  <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                  </svg>                  
+                </button>  
+              </div>                            
               <label class="children" for="children">
                 Дети: 
               </label>
-              <button class="more-less minus" type="button" aria-label="меньше"></button>            
-              <input class="children" type="text" name="children" id="children" aria-label="Впишите количество детей" value="0">
-              <button class="more-less plus" type="button" aria-label="больше"></button>  
+              <div class="plus-minus">
+                <button class="more-less minus" type="button" aria-label="меньше">
+                  <svg width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3"/>
+                  </svg>
+                </button>            
+                <input class="children" type="text" name="children" id="children" aria-label="Впишите количество детей" value="0">
+                <button class="more-less plus" type="button" aria-label="больше">
+                  <svg width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"/>
+                  </svg>
+                </button>  
+              </div>              
             </div>
             <button class="btn btn-blue" type="submit">Найти</button>
           </form>
