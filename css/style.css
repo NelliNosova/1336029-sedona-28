@@ -199,25 +199,21 @@ a {
 }
 
 .site-navigation li:nth-child(4n-3) {
-  text-align: left;
-  /* margin-left: 72px; */
+  text-align: left;  
 }
 
 .site-navigation li:nth-child(4n-2) {
-  text-align: left;
-  /* margin-left: 135px; */
+  text-align: left; 
 }
 
 .site-navigation li:nth-child(4n-1) {
   text-align: right;
-  margin-left: auto;
-  /* margin-left: 418px; */
+  margin-left: auto;  
 }
 
 
 .site-navigation li:nth-child(4n) {
-  text-align: right;
-  /* margin-left: 148px; */
+  text-align: right;  
 }
 
 /*====Promo====*/
@@ -455,6 +451,9 @@ a {
   position: relative;
   z-index: 2;
   display: flex;
+  padding-left: 86px;
+  padding-right: 120px;
+  line-height: 26px;
   background-color: var(--basic-transparent-white);
 }
 
@@ -462,28 +461,20 @@ a {
   margin-top: -128px;
 }
 
-.main-footer {
-  
-  line-height: 26px;
-}
-
 .main-footer div.contacts {
   width: 300px;
   margin: 0;  
   margin-top: 21px;
-  margin-bottom: 49px;
-  margin-left: 75px;
+  margin-bottom: 49px; 
   font-size: 21px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 
 .main-footer p.contacts {
   display: inline-block;
-  vertical-align: middle; 
-  text-align: center;
-  margin: 0;
-  margin-left: 57px;
+  vertical-align: middle;   
+  margin: 0; 
   padding: 0; 
 }
 
@@ -492,8 +483,7 @@ a {
   vertical-align: middle; 
   text-align: center;
   margin: 0;
-  margin-top: 9px;
-  margin-left: 56px;
+  margin-top: 9px;  
 }
 
 .main-footer a {
@@ -512,7 +502,7 @@ a {
   margin: 0;  
   margin-top: 35px;
   margin-bottom: 49px;
-  margin-left: 149px;
+  margin-left: 140px;
   padding: 0; 
   list-style: none;  
 }
@@ -524,7 +514,6 @@ a {
   width: 46px;
   height: 48px;
   background-color: var(--basic-blue);
-
 }
 
 .social svg {
@@ -536,7 +525,7 @@ a {
   margin: 0;
   margin-top: 38px;
   margin-bottom: 60px;
-  margin-left: 143px;
+  margin-left: auto;
 }
 
 .main-footer .by {
@@ -678,11 +667,9 @@ a {
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
   width: 38px;
-  height: 38px;   
-  
+  height: 38px;     
   fill: var(--basic-dark-grey);
   border: 0 solid transparent;                
 }
@@ -814,7 +801,6 @@ a {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
-
 .filter .filter-type {
   margin-left: 92px;
 }
@@ -822,8 +808,6 @@ a {
 .filter .filter-price {
   margin-left: 335px;  
 }
-
-
 
 .filter-price .filter-item {
   margin: 0;
@@ -844,8 +828,7 @@ a {
 .range-controls .price-item {
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  
+  margin-right: auto;  
   width: 157px; 
 }
 
@@ -857,7 +840,7 @@ a {
 .range-controls .bar {
   width: 248px;
   height: 2px;  
-  background-color:: var(--basic-white);
+  background-color: var(--basic-white);
 }
 
 .range-controls .toggle {
@@ -882,6 +865,13 @@ a {
   padding-top: 0;  
 }
 
+.price-controls .price-center {
+  width: 90px; 
+  margin-left: auto;  
+  margin-right: auto;
+  margin-top: 4px;
+}
+
 .min-price::after {
   position: absolute;
   top: 4px;
@@ -890,18 +880,6 @@ a {
   width: 2px;
   height: 22px;
   background-color: var(--basic-white);
-}
-
-
-.price-controls .price-item { 
-  box-sizing: border-box; 
-  width: 157px;    
-  padding-top: 4px;
-  padding-left: 55px;
-}
-
-.price-controls .max-price {
-  padding-left: 35px;
 }
 
 .price-controls input {
@@ -1128,8 +1106,7 @@ a {
 .hotel-list .price-title {
   display: inline-block;
   vertical-align: middle; 
-  min-width: 116px;
-  
+  min-width: 116px;  
 }
 
 .hotel-list .hotel-botton {
@@ -1144,8 +1121,7 @@ a {
   width: 110px;
   height: 23px;
   margin-right: 2px;
-  padding-top: 4px;
-  /* padding-right: 2px; */
+  padding-top: 4px;  
 }
 
 .hotel-list .btn-brown {
@@ -1169,7 +1145,6 @@ a {
   color: var(--basic-dark);
 }
 
-
 .hotel-list .stars {
   display: flex;
   justify-content: flex-end;
@@ -1186,8 +1161,7 @@ a {
   margin-right: 0;
 }
 
-.hotel-list .rating {
- /*  display: inline-block; */ 
+.hotel-list .rating { 
   vertical-align: middle; 
   text-align: center;
   align-self: flex-end;

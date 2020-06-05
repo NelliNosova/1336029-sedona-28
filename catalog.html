@@ -72,35 +72,30 @@
                 </ul>
               </fieldset>
             </div>
-            <div class="filter-price">  
-              <form method="GET" action="https://echo.htmlacademy.ru">
-                <fieldset class="filter-item">
-                  <legend>Стоимость в сутки (Р):</legend>
-                  <div class="range-filter">
-                    <div class="price-controls border">
-                      <label class="price-item min-price">
-                        <div class="price-center">
-                          от <input type="number" name="min-price" value="0">
-                        </div>                        
-                      </label>
-                      <label class="price-item max-price">
-                        <div class="price-center">
-                          до <input type="number" name="max-price" value="3000">
-                        </div>                        
-                      </label>
+            <div class="filter-price">                
+              <fieldset class="filter-item">
+                <legend>Стоимость в сутки (Р):</legend>
+                <div class="range-filter">
+                  <div class="price-controls border">
+                    <div class="price-center">
+                      <label class="price-item min-price">от </label>
+                      <input type="number" name="min-price" value="0">
                     </div>
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div>
+                    <div class="price-center">
+                      <label class="price-item max-price">до </label>
+                      <input type="number" name="max-price" value="3000">
+                    </div>                  
+                  </div>
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
                     </div>
-
-                  </div> 
-                </fieldset>
-                <button class="btn border" type="submit">Показать</button>   
-              </form>  
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                </div> 
+              </fieldset>
+              <button class="btn border" type="submit">Показать</button>                  
             </div>            
           </div>
         </form>
