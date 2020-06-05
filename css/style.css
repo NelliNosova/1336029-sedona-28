@@ -780,6 +780,7 @@ a {
   background-image: url("../img/checkbox-off.svg");  
   background-repeat: no-repeat;   
   background-position: top center;
+  cursor: pointer;
  }
 
  .type-item .check::before {
@@ -850,7 +851,16 @@ a {
   height: 21px;
   padding: 0;
   background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
   cursor: pointer;
+}
+
+.range-controls .toggle:hover,
+.range-controls .toggle:focus {
+  width: 23px;
+  height: 24px;
+  transform: scale(1.21);
 }
 
 .range-controls .toggle-max {
