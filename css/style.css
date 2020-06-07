@@ -453,6 +453,7 @@ a {
   display: flex;
   padding-left: 86px;
   padding-right: 120px;
+  margin-top: auto;
   line-height: 26px;
   background-color: var(--basic-transparent-white);
 }
@@ -465,7 +466,7 @@ a {
   width: 300px;
   margin: 0;  
   margin-top: 21px;
-  margin-bottom: 49px; 
+  margin-bottom: 36px; 
   font-size: 21px;
   font-weight: 700;
   text-align: center;
@@ -501,7 +502,7 @@ a {
   min-width: 149px;
   margin: 0;  
   margin-top: 35px;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
   margin-left: 140px;
   padding: 0; 
   list-style: none;  
@@ -524,7 +525,7 @@ a {
   min-width: 300px;
   margin: 0;
   margin-top: 38px;
-  margin-bottom: 60px;
+  margin-bottom: 36px;
   margin-left: auto;
 }
 
@@ -641,7 +642,7 @@ a {
   top: 9px;
   right: 2px;
   fill: var(--basic-dark-grey);
-  background-color: var(--basic-light-grey);
+  background-color: transparent;
   border: none;
 }
 
@@ -671,6 +672,7 @@ a {
   width: 38px;
   height: 38px;     
   fill: var(--basic-dark-grey);
+  background-color: transparent;
   border: 0 solid transparent;                
 }
 
@@ -802,6 +804,10 @@ a {
   background-image: url("../img/checkbox-on-disabled.svg");
 }
 
+.check-input:focus + .check::before {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .filter .filter-type {
   margin-left: 92px;
 }
@@ -845,7 +851,7 @@ a {
 }
 
 .range-controls .toggle {
-  position: absolute;
+  position: absolute;  
   top: 11px;
   width: 19px;
   height: 21px;
@@ -863,6 +869,10 @@ a {
   transform: scale(1.21);
 }
 
+.range-controls .toggle:focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
 .range-controls .toggle-max {
   left: 252px;
 }
@@ -875,11 +885,21 @@ a {
   padding-top: 0;  
 }
 
-.price-controls .price-center {
+.price-controls .price-center {  
   width: 90px; 
-  margin-left: auto;  
-  margin-right: auto;
   margin-top: 4px;
+}
+
+.price-center input {
+  margin-left: -2px;
+}
+
+.price-center-min {
+  margin-left: 61px
+}
+
+.price-center-max {
+  margin-left: 57px
 }
 
 .min-price::after {
@@ -933,11 +953,12 @@ a {
 .filter .btn {
   display: block;
   text-align: center;
-  margin-top: 4px;
   width: 137px;
   height: 36px;
+  margin-top: 4px; 
   margin-left: 83px;
   margin-right: auto;
+  padding-right: 0;
   font-weight: 400;
   background-color: transparent;
 }
