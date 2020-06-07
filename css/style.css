@@ -38,7 +38,8 @@
   --basic-input-hover: #ebebeb;
   --basic-input-border: #e5e5e5;
   --basic-copyright-active: #bdbbbc;
-  --basic-sort: #cacaca;  
+  --basic-sort: #cacaca; 
+  --basic-disabled: #6a6a6a;
 }
 
 /*====Global====*/
@@ -136,8 +137,7 @@ a {
   background-color: var(--basic-dark-blue);
 }
 
-.btn-blue:active,
-.social a:active {
+.btn-blue:active {
   color: var(--basic-btn-opscity);
   background-color: var(--basic-darkest-blue);
 }
@@ -521,6 +521,12 @@ a {
   fill: var(--basic-white);
 }
 
+.social a:active {
+  background-color: var(--basic-darkest-blue);
+  fill-opacity: 0.3;
+}
+
+
 .copyright-conteiner {
   min-width: 300px;
   margin: 0;
@@ -799,6 +805,10 @@ a {
   background-image: url("../img/checkbox-off-disabled.svg");
 }
 
+.check-input:disabled + .check {
+  color: var(--basic-disabled);
+}
+
 .check-input:checked:disabled + .check::before { 
   width: 27px; 
   background-image: url("../img/checkbox-on-disabled.svg");
@@ -866,6 +876,7 @@ a {
 .range-controls .toggle:focus {
   width: 23px;
   height: 24px;
+  margin-left: -2px;
   transform: scale(1.21);
 }
 
@@ -1038,12 +1049,12 @@ a {
 
 .sorting-rating .btn:active {
   color: var(--basic-text);
-  border: none;
+  border-bottom: 1px dotted transparent;
 }
 
 .sorting-rating .active {
   color: var(--basic-blue);
-  border: none;
+  border-bottom: 1px dotted transparent;
 }
 
 .sorting-price {
