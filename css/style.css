@@ -20,7 +20,7 @@
 
 :root {
   --basic-text: #000000;
-  --basic-white: #ffffff;
+  --basic-white: #ffffff;  
   --basic-transparent-white: rgba(255, 255, 255, 0.9);
   --basic-transparent-black: rgba(0, 0, 0, 0.3);
   --basic-btn-opscity: rgba(225, 225, 225, 0.3);
@@ -52,12 +52,13 @@ body {
   text-align: center;
   color: var(--basic-text);
   text-transform: uppercase;
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-grey);
 }
 
 .box-body {
   width: 1200px;
-  margin: auto;  
+  margin: auto;
+  background-color: var(--basic-white);  
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
@@ -219,6 +220,7 @@ a {
 /*====Promo====*/
 
 .promo {  
+  width: 100%;
   padding-top: 35px;
   padding-bottom: 81px;
   background-color: var(--basic-dark);
@@ -259,7 +261,7 @@ a {
   font-weight: 700; 
 }
 
-.advantage .content_5 {
+.advantage .content-5 {
   margin-top: 42px;
   margin-left: 100px;
   margin-right: 100px;
@@ -283,12 +285,12 @@ a {
   background-color: var(--basic-blue);
 }
 
-.advantage-items .advantage-item_1,
-.advantage-items .advantage-item_2 {
+.advantage-items .advantage-item-1,
+.advantage-items .advantage-item-2 {
   display: flex;   
 }
 
-.advantage-items .advantage-item_2 {
+.advantage-items .advantage-item-2 {
   flex-direction: row-reverse;
 }
 
@@ -311,18 +313,18 @@ a {
   line-height: 22px;
 }
 
-.advantage-item_1 .content,
-.advantage-item_2 .content {
+.advantage-item-1 .content,
+.advantage-item-2 .content {
   max-width: 400px;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.advantage-item_1 .content {    
+.advantage-item-1 .content {    
   margin-top: 46px;
 }
 
-.advantage-item_2 .content {
+.advantage-item-2 .content {
   margin-top: 49px;
 }
 
@@ -364,19 +366,19 @@ a {
 }
 
 
-.real-city_1 { 
+.real-city-1 { 
   background-image: url("../img/icon_1.svg");
   background-repeat: no-repeat;
   background-position: 162px 60px;
 }
 
-.real-city_2 { 
+.real-city-2 { 
   background-image: url("../img/icon_2.svg");
   background-repeat: no-repeat;
   background-position: 161px 61px;
 }
 
-.real-city_3 { 
+.real-city-3 { 
   background-image: url("../img/icon_3.svg");
   background-repeat: no-repeat;
   background-position: 166px 55px;
@@ -446,7 +448,7 @@ a {
 }
 
 .booking iframe {
-  frameborder: 0;
+  width: 100%;  
   border: none;
 }
 
@@ -456,7 +458,7 @@ a {
   position: relative;
   z-index: 2;
   display: flex;
-  padding-left: 86px;
+  padding-left: 87px;
   padding-right: 120px;
   margin-top: auto;
   line-height: 26px;
@@ -468,9 +470,9 @@ a {
 }
 
 .main-footer div.contacts {
-  width: 300px;
+  min-width: 300px;
   margin: 0;  
-  margin-top: 21px;
+  margin-top: 22px;
   margin-bottom: 36px; 
   font-size: 21px;
   font-weight: 700;
@@ -478,18 +480,23 @@ a {
 }
 
 .main-footer p.contacts {
-  display: inline-block;
-  vertical-align: middle;   
   margin: 0; 
   padding: 0; 
 }
 
 .main-footer .contacts-phone {
   display: inline-block;
-  vertical-align: middle; 
-  text-align: center;
+  vertical-align: middle;
+  width: 100%;  
   margin: 0;
-  margin-top: 9px;  
+  padding: 0;
+  margin-top: 9px; 
+}
+
+.contacts-phone .phone {
+  vertical-align: top;
+  min-width: 59%;   
+  text-align: left;
 }
 
 .main-footer a {
@@ -504,11 +511,11 @@ a {
 .main-footer .social {  
   display: flex;
   justify-content: space-between;
-  min-width: 149px;
+  min-width: 150px;
   margin: 0;  
   margin-top: 35px;
   margin-bottom: 36px;
-  margin-left: 140px;
+  margin-left: 138px;
   padding: 0; 
   list-style: none;  
 }
@@ -541,7 +548,7 @@ a {
 }
 
 .main-footer .by {
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .main-footer .copyright:hover,
@@ -576,7 +583,7 @@ a {
   margin: 0;
   margin-top: 53px;
   margin-left: 54px;
-  margin-right: 55px;
+  margin-right: 5px;
 }
 
 .search-popap label {
@@ -689,12 +696,12 @@ a {
 
 .adults + .plus {
   top: 0;
-  left: 190px;
+  left: 188px;
 }
 
 .children + .plus {
   top: 0;
-  right: 0;
+  right: -2px;
 }
 
 .search-popap .more-less:hover,
@@ -712,6 +719,7 @@ a {
 /*====search====*/
 
 .search {
+  width: 100%;
   background-color: var(--basic-darkest-blue);
   background-image: url("../img/background.jpg");
   background-position: top center;
@@ -755,6 +763,7 @@ a {
 
 .filter-infrastructure .infrastucture-item,
 .filter-type .type-item {
+  position: relative;
   margin-bottom: 25px;
 }
 
@@ -786,10 +795,10 @@ a {
 .infrastucture-item .check::before,
 .type-item .check::before {
   content: " ";
-  position: absolute;  
+  position: absolute;    
   width: 23px;
   height: 23px;  
-  margin-left: -39px;  
+  margin-left: -40px;  
   background-image: url("../img/checkbox-off.svg");  
   background-repeat: no-repeat;   
   background-position: top center;
