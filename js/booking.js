@@ -4,13 +4,7 @@ var startData = document.querySelector(".start-data");
 var endData = document.querySelector(".end-data");
 var adults = document.querySelector(".adults");
 var chilren = document.querySelector(".children");
-var adultsItem = localStorage.getItem("adults");
-var chilrenItem = localStorage.getItem("chilren");
 var map = document.querySelector(".map");
-/* var adultsMinus = document.querySelector(".adults-minus");
-var adultsPlus = document.querySelector(".adults-plus");
-var childrenMinus = document.querySelector(".children-minus");
-var ChildrenPlus = document.querySelector(".children-plus"); */
 var bookingForm =document.querySelector(".booking-form");
 
 var isStorageSupport = true;
