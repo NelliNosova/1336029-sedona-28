@@ -488,6 +488,9 @@ a {
 .booking iframe {
   width: 100%;  
   border: none;
+  background-image: url(../img/map.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
 /*====main-footer====*/
