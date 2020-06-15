@@ -872,7 +872,7 @@ a {
 .search fieldset {
   border: none;
   padding-top: 7px;
-  padding-left: 11px;
+  padding-left: 13px;
 }
 
 .filter ul {
@@ -976,7 +976,7 @@ a {
 }
 
 .filter .filter-price {
-  margin-left: 335px;  
+  margin-left: 334px;  
 }
 
 .filter-price .filter-item {
@@ -1046,7 +1046,7 @@ a {
 .price-controls {  
   position: relative;
   height: 32px;
-  margin-top: 13px;
+  margin-top: 12px;
   margin-bottom: 0;
   padding-top: 0;  
 }
@@ -1123,9 +1123,10 @@ a {
   text-align: center;
   width: 137px;  
   margin-top: 5px; 
-  margin-left: 83px;
+  margin-left: 85px;
   margin-right: auto;
   padding: 5px;
+  padding-bottom: 6px;
   font-weight: 400;
   background-color: transparent;
 }
